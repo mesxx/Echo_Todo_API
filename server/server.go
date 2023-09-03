@@ -10,12 +10,14 @@ import (
 	"todo_api/usecase"
 
 	"github.com/golang-jwt/jwt/v5"
+	"github.com/joho/godotenv"
 	echojwt "github.com/labstack/echo-jwt/v4"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
 
 func NewServer() *echo.Echo {
+	godotenv.Load()
 	e := echo.New()
 
 	// Middleware
