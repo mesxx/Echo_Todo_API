@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"todo_api/model"
+	"echo_todo_api/model"
 
 	"gorm.io/gorm"
 )

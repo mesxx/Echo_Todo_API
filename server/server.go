@@ -1,13 +1,13 @@
 package server
 
 import (
+	"echo_todo_api/auth"
+	"echo_todo_api/config"
+	"echo_todo_api/handler"
+	"echo_todo_api/model"
+	"echo_todo_api/repository"
+	"echo_todo_api/usecase"
 	"os"
-	"todo_api/auth"
-	"todo_api/config"
-	"todo_api/handler"
-	"todo_api/model"
-	"todo_api/repository"
-	"todo_api/usecase"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/joho/godotenv"

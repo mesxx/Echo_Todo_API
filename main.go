@@ -1,8 +1,8 @@
 package main
 
 import (
+	"echo_todo_api/server"
 	"os"
-	"todo_api/server"
 )
 
 func main() {

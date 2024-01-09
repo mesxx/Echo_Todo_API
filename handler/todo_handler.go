@@ -1,11 +1,10 @@
 package handler
 
 import (
+	"echo_todo_api/model"
+	"echo_todo_api/usecase"
 	"net/http"
 	"strconv"
-
-	"todo_api/model"
-	"todo_api/usecase"
 
 	"github.com/labstack/echo/v4"
 )

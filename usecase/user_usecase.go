@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"todo_api/model"
-	"todo_api/repository"
+	"echo_todo_api/model"
+	"echo_todo_api/repository"
 
 	"golang.org/x/crypto/bcrypt"
 )
