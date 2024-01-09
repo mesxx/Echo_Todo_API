@@ -96,14 +96,31 @@ func (h *UserHandler) UpdateUser(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusUnauthorized)
 	}
 
-	user, err := h.UserUsecase.FindByID(uint(data.ID))
+	checkUser, err := h.UserUsecase.FindByID(uint(data.ID))
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, "No Record")
 	}
 
 	// Init raw
+	user := new(model.User)
 	if err := c.Bind(user); err != nil {
 		return err
+	}
+	user.ID = checkUser.ID
+	user.CreatedAt = checkUser.CreatedAt
+
+	if user.Username == "" {
+		user.Username = checkUser.Username
+	}
+
+	if user.Password == "" {
+		user.Password = checkUser.Password
+	} else {
+		hashedPassword, err := h.UserUsecase.HashPassword(user.Password)
+		if err != nil {
+			return err
+		}
+		user.Password = hashedPassword
 	}
 
 	// Query
