@@ -1,9 +1,10 @@
 package auth
 
 import (
-	"echo_todo_api/model"
-	"echo_todo_api/usecase"
 	"net/http"
+
+	"github.com/mesxx/Echo_Todo_API/model"
+	"github.com/mesxx/Echo_Todo_API/usecase"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/labstack/echo/v4"

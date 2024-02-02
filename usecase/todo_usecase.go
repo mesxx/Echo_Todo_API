@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"echo_todo_api/model"
-	"echo_todo_api/repository"
+	"github.com/mesxx/Echo_Todo_API/model"
+	"github.com/mesxx/Echo_Todo_API/repository"
 )
 
 type TodoUsecase struct {

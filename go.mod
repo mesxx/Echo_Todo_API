@@ -1,4 +1,4 @@
-module echo_todo_api
+module github.com/mesxx/Echo_Todo_API
 
 go 1.21.5
 

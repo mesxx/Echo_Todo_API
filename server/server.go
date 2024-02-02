@@ -1,13 +1,14 @@
 package server
 
 import (
-	"echo_todo_api/auth"
-	"echo_todo_api/config"
-	"echo_todo_api/handler"
-	"echo_todo_api/model"
-	"echo_todo_api/repository"
-	"echo_todo_api/usecase"
 	"os"
+
+	"github.com/mesxx/Echo_Todo_API/auth"
+	"github.com/mesxx/Echo_Todo_API/config"
+	"github.com/mesxx/Echo_Todo_API/handler"
+	"github.com/mesxx/Echo_Todo_API/model"
+	"github.com/mesxx/Echo_Todo_API/repository"
+	"github.com/mesxx/Echo_Todo_API/usecase"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/joho/godotenv"

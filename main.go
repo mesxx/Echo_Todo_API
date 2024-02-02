@@ -1,8 +1,9 @@
 package main
 
 import (
-	"echo_todo_api/server"
 	"os"
+
+	"github.com/mesxx/Echo_Todo_API/server"
 )
 
 func main() {

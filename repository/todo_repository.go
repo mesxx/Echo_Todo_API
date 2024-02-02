@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"echo_todo_api/model"
+	"github.com/mesxx/Echo_Todo_API/model"
 
 	"gorm.io/gorm"
 )
